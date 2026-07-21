@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Example</title>
+
+    <style>
+        .table-container {
+            width: 100%;
+            overflow-x: auto;
+            -webkit-overflow-scrolling: touch;
+            margin-bottom: 30px;
+        }
+
+        .fixed-table {
+            width: 100%;
+            table-layout: fixed;
+            border-collapse: collapse;
+        }
+
+        .fixed-table th,
+        .fixed-table td {
+            border: 1px solid #ccc;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .fixed-table td {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="table-container">
+        <table class="fixed-table">
+            <thead>
+                <tr>
+                    <th rowspan="2">Server Code</th>
+                    <th colspan="2">System Allocation</th>
+                    <th rowspan="2">Operational Status</th>
+                </tr>
+                <tr>
+                    <th>CPU CORE</th>
+                    <th>RAM Allocator</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>SRV-001</td>
+                    <td>8 Cores</td>
+                    <td>16 GB</td>
+                    <td>Running</td>
+                </tr>
+                <tr>
+                    <td>SRV-002</td>
+                    <td>16 Cores</td>
+                    <td>32 GB</td>
+                    <td>Maintenance</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+</body>
+</html>

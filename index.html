@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+body{
+     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+     background-color: red;
+     margin: 40px;
+     color: #282828;
+}
+table{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+     border-radius: 4px;
+     overflow: hidden;
+}
+th,td{
+    padding: 14px 18px;
+    text-align: left;
+    border-bottom: 1px solid yellow;
+}
+th{
+    background-color: #1F4E79;
+    color: #FFFFFF;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+}
+tbody tr:nth-child(even){
+    background-color:  #F8FAFC;
+}
+tbody tr :hover{
+    background-color:  #EBF3FA;
+    transition:  background-color 0.2s ease;
+
+}
+tfoot td{
+    font-weight: bold;
+    background-color:  #F0F2F5;
+    color: #1F4E79;
+}
+
+    </style>
+    <title>System Architecture Data Matrix</title>
+</head>
+<body>
+    <h1>Active System Architecture Nodes</h1>
+    <table>
+        <thead>
+            <tr>
+                <th>Node indenfier </th>
+                <th>Service type</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Node 101</td>
+                <td>PostgreSQL Primary Database</td>
+                <td>Online</td>
+            </tr>
+            <tr>
+                 <td>Node 102</td>
+                <td>PostgreSQL Primary Database</td>
+                <td>Online</td>
+            </tr>
+               <tr>
+                 <td>Node 103</td>
+                <td>PostgreSQL Primary Database</td>
+                <td>Online</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">This is country</td>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+</html>
